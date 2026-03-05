@@ -1,5 +1,6 @@
 package com.example.demo.models;
 
+import com.example.demo.enums.AlunoEnum;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -13,9 +14,18 @@ public class AlunoModel {
     private String nome;
     private String email;
     private Integer idade;
+    private AlunoEnum alunoEnum;
+
+
+    public AlunoEnum getAlunoEnum() {
+        return alunoEnum;
+    }
+
+    public void setAlunoEnum(AlunoEnum alunoEnum) {
+        this.alunoEnum = alunoEnum;
+    }
 
     public AlunoModel(){
-
     }
 
     public Long getId() {
